@@ -12,7 +12,6 @@ local_server= True
 app = Flask(__name__)
 app.secret_key='harsha'
 
-
 # this is for getting unique user access
 login_manager=LoginManager(app)
 login_manager.login_view='login'
