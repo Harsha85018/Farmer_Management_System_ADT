@@ -140,7 +140,7 @@ def addfarming():
         dep=Farming(farmingtype=farmingtype)
         db.session.add(dep)
         db.session.commit()
-        flash("Farming Addes","success")
+        flash("Farming Added","success")
     return render_template('farming.html')
 
 
@@ -205,7 +205,7 @@ def signup():
         newuser=User(username=username,email=email,password=encpassword)
         db.session.add(newuser)
         db.session.commit()
-        flash("Signup Succes Please Login","success")
+        flash("Signup Success Please Login","success")
         return render_template('login.html')
 
           
